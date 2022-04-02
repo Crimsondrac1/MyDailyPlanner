@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="12a" name="0">12:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="0" id="tNotes-0"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb0"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="1a" name="1">1:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="1" id="tNotes-1"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb1"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="2a" name="2">2:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="2" id="tNotes-2"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb2"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="3a" name="3">3:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="3" id="tNotes-3"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb3"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="4a" name="4">4:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="4" id="tNotes-4"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb4"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="5a" name="5">5:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="5" id="tNotes-5"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb5"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="6a" name="6">6:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="6" id="tNotes-6"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb6"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="7a" name="7">7:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="7" id="tNotes-7"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb7"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="8a" name="8">8:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="8" id="tNotes-8"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb8"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="9a" name="9">9:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="9" id="tNotes-9"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb9"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="10a" name="10" id="sb1">10:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="10" id="tNotes-10"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb10"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="11a" name="11">11:00 AM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="11" id="tNotes-11"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb11"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="12p" name="12">12:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="12" id="tNotes-12"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb12"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="1p" name="13">1:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="13" id="tNotes-13"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb13"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="2p" name="14">2:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="14" id="tNotes-14"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb14"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="3p" name="15">3:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="15" id="tNotes-15"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb15"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="4p" name="16">4:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="16" id="tNotes-16"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb16"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="5p" name="17">5:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="17" id="tNotes-17"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb17"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="6p" name="18">6:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="18" id="tNotes-18"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb18"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="7p" name="19">7:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="19" id="tNotes-19"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb19"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="8p" name="20">8:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="20" id="tNotes-20"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb20"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="9p" name="21">9:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="21" id="tNotes-21"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb21"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="10p" name="22">10:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="22" id="tNotes-22"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb22"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-1 col-sm-1 now d-flex justify-content-center align-items-center" id="11a" name="23">11:00 PM</div>
+        <textarea class="col-lg-9 col-md-10 col-sm-10 task" name="23" id="tNotes-23"></textarea>
+        <div class="col-lg-1 col-md-1 col-sm-1 fas fa-save fa-2x saveBtn btn d-flex align-items-center justify-content-center" id="sb23"></div>
+      </div>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
