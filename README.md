@@ -13,3 +13,11 @@ Develop a daily planner to add tasks too and save entries
 -- Green: hours that have not passed yet.
 - Save button to save entries to local storage. (Not done.)
 
+Link to demo site:
+https://crimsondrac1.github.io/MyDailyPlanner/
+
+Link to Repo:
+https://github.com/Crimsondrac1/MyDailyPlanner.git
+
+
+![alt text](./assets/images/Planner.jpg)
